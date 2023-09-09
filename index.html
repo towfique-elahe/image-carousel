@@ -1,0 +1,101 @@
+<!-- 
+    Author: Towfique Elahe
+    Author URL: https://elahe-portfolio.vercel.app/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <title>Image Carousel by Towfique Elahe</title>
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- slider container -->
+    <div class="slider-container">
+        <div class="slide fade">
+            <img class="slide-image"
+                src="https://images.unsplash.com/photo-1682685796063-d2604827f7b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+            <div class="slide-content">
+                <h3 class="slide-title">title 1</h3>
+                <p class="slide-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                </p>
+                <a href="" class="slide-btn">
+                    button <ion-icon name="arrow-forward-circle"></ion-icon>
+                </a>
+            </div>
+            <div class="slide-number-container">
+                <p class="slider-number">01</p>
+                <hr>
+                <p class="slider-number">03</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img class="slide-image"
+                src="https://images.unsplash.com/photo-1682687220566-5599dbbebf11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80">
+            <div class="slide-content">
+                <h3 class="slide-title">title 2</h3>
+                <p class="slide-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                </p>
+                <a href="" class="slide-btn">
+                    button <ion-icon name="arrow-forward-circle"></ion-icon>
+                </a>
+            </div>
+            <div class="slide-number-container">
+                <p class="slider-number">02</p>
+                <hr>
+                <p class="slider-number">03</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img class="slide-image"
+                src="https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+            <div class="slide-content">
+                <h3 class="slide-title">title 3</h3>
+                <p class="slide-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, necessitatibus.
+                </p>
+                <a href="" class="slide-btn">
+                    button <ion-icon name="arrow-forward-circle"></ion-icon>
+                </a>
+            </div>
+            <div class="slide-number-container">
+                <p class="slider-number">03</p>
+                <hr>
+                <p class="slider-number">03</p>
+            </div>
+        </div>
+
+        <!-- previous and nest buttons -->
+        <div class="slider-nav">
+            <a class="slider-nav-btn" onclick="plusSlides(-1)">
+                <ion-icon name="caret-back-outline"></ion-icon>
+            </a>
+            <a class="slider-nav-btn" onclick="plusSlides(1)">
+                <ion-icon name="caret-forward-outline"></ion-icon>
+            </a>
+        </div>
+
+        <!-- dots/circles -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- function js -->
+    <script src="./function.js"></script>
+    <!-- ion-icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
